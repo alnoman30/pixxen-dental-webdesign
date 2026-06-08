@@ -1934,7 +1934,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 arrows: false,
                 pagination: false,
                 autoScroll: {
-                    speed: 4.5,
+                    speed: 2,
                     pauseOnHover: false,
                     pauseOnFocus: false,
                 },
