@@ -400,7 +400,7 @@
 
   <!-- banner -->
   <section
-    class="min-h-screen py-16 md:py-24 lg:min-h-screen bg-offwhite relative flex flex-col justify-between overflow-hidden font-stacksans px-2  lg:px-0 lg:py-0">
+    class="min-h-screen pt-16 pb-6 md:py-24 lg:min-h-screen bg-offwhite relative flex flex-col justify-between overflow-hidden font-stacksans px-2  lg:px-0 lg:pt-0 lg:pb-0">
     <!-- TOP LEFT IMAGE (UNCHANGED) -->
     <div class="absolute top-0 left-0">
       <img src="assets/images/dental-smile-woman-teeth.png" alt="top-left"
@@ -473,7 +473,7 @@
           <!-- MOBILE SCROLL BUTTON (ONLY FIXED OVERFLOW, NOT POSITION) -->
           <div class="dental-banner-down-arrow mt-auto lg:hidden flex">
             <button aria-label="Scroll down"
-              class="w-24 h-24 bg-teal hover:bg-[#00CED1] text-navy rounded-full flex items-center justify-center transition-transform hover:scale-105 cursor-pointer">
+              class="w-18 h-18 sm:w-24 sm:h-24 bg-teal hover:bg-[#00CED1] text-navy rounded-full flex items-center justify-center transition-transform hover:scale-105 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-10 h-10">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
@@ -496,14 +496,15 @@
   <!-- banner -->
 
   <!-- 4 card section -->
-  <section class="pt-16 md:pt-24 bg-white font-stacksans">
+  <section class="pt-6 sm:pt-10 md:pt-16 lg:pt-24 bg-white font-stacksans">
     <div class="container px-4">
       <!-- Main Layout Grid Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 md:gap-6 items-stretch">
         <!-- LEFT CONTENT: Stats Dashboard Grid (Spans 6/12 columns on Desktop) -->
-        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
           <!-- Stat Card 1: Navy Blue -->
-          <div class="bg-navy text-white p-6 md:p-12 rounded-4xl flex flex-col justify-between min-h-55 md:h-92.5">
+          <div
+            class="bg-navy text-white p-6 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] flex flex-col justify-between min-h-55 md:h-92.5">
             <div class="text-5xl md:text-[64px] font-normal leading-[90%]">
               86%
             </div>
@@ -514,7 +515,8 @@
           </div>
 
           <!-- Stat Card 2: Light Purple -->
-          <div class="bg-lavender text-navy p-6 md:p-12 rounded-4xl flex flex-col justify-between min-h-55 md:h-92.5">
+          <div
+            class="bg-lavender text-navy p-6 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] flex flex-col justify-between min-h-55 md:h-92.5">
             <div class="text-5xl md:text-[64px] font-normal leading-[90%]">
               62%
             </div>
@@ -525,7 +527,8 @@
           </div>
 
           <!-- Stat Card 3: Bright Teal -->
-          <div class="bg-teal text-navy p-6 md:p-12 rounded-4xl flex flex-col justify-between min-h-55 md:h-92.5">
+          <div
+            class="bg-teal text-navy p-6 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] flex flex-col justify-between min-h-55 md:h-92.5">
             <div class="text-5xl md:text-[64px] font-normal leading-[90%]">
               90%
             </div>
@@ -536,7 +539,8 @@
           </div>
 
           <!-- Stat Card 4: Light Yellow -->
-          <div class="bg-lemon text-navy p-6 md:p-12 rounded-4xl flex flex-col justify-between min-h-55 md:h-92.5">
+          <div
+            class="bg-lemon text-navy p-6 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] flex flex-col justify-between min-h-55 md:h-92.5">
             <div class="text-5xl md:text-[64px] font-normal leading-[90%]">
               42%
             </div>
@@ -549,7 +553,7 @@
 
         <!-- RIGHT CONTENT: Callout Card (Spans 6/12 columns on Desktop) -->
         <div
-          class="lg:col-span-6 border border-navy bg-white p-8 sm:p-12 rounded-[40px] flex flex-col justify-between min-h-[400px]">
+          class="lg:col-span-6 border border-navy bg-white p-4 sm:p-6 md:p-12 rounded-2xl sm:rounded-3xl md:rounded-[64px] flex flex-col justify-between min-h-[400px]">
           <!-- Heading Group -->
           <div>
             <h2 class="text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%] mb-6">
@@ -588,10 +592,10 @@
   <!-- 4 card section -->
 
   <!-- 7 reason section -->
-  <section class="py-16 md:py-24 bg-white font-stacksans text-navy">
+  <section class="py-6 sm:py-10 md:py-16 lg:py-24 bg-white font-stacksans text-navy">
     <div class="container">
       <!-- Header Group -->
-      <div class="mb-12 md:mb-16">
+      <div class="mb-8 sm:mb-12 md:mb-16">
         <h2 class="text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%] max-w-248 mb-5">
           7 reasons your current website is costing you new patients
         </h2>
@@ -605,7 +609,7 @@
       <div class="flex flex-col overflow-hidden">
         <!-- Row 1 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             1
           </div>
@@ -621,7 +625,7 @@
 
         <!-- Row 2 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             2
           </div>
@@ -637,7 +641,7 @@
 
         <!-- Row 3 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             3
           </div>
@@ -653,7 +657,7 @@
 
         <!-- Row 4 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             4
           </div>
@@ -669,7 +673,7 @@
 
         <!-- Row 5 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             5
           </div>
@@ -686,7 +690,7 @@
 
         <!-- Row 6 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-white transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             6
           </div>
@@ -702,7 +706,7 @@
 
         <!-- Row 7 -->
         <div
-          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-6 md:py-7 md:px-8 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-3xl">
+          class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center p-3.5 sm:p-6 md:py-7 md:px-10 bg-[#F5F5F5] transition-colors duration-150 hover:bg-[#f1f3f5] rounded-xl sm:rounded-2xl md:rounded-3xl">
           <div class="md:col-span-1 text-2xl font-normal leading-[110%]">
             7
           </div>
@@ -723,8 +727,8 @@
 
   <!-- Key services section  -->
   <section
-    class="dental-section bg-teal py-16 md:py-24 md:px-12 lg:px-20 min-h-screen font-stacksans mx-2 rounded-4xl md:rounded-[42px] lg:rounded-[64px]">
-    <div class="container flex flex-col lg:flex-row gap-12 items-start relative">
+    class="dental-section bg-teal py-6 sm:py-10 md:py-16 lg:py-24 md:px-12 lg:px-20 min-h-screen font-stacksans mx-2 rounded-2xl sm:rounded-3xl md:rounded-[64px]">
+    <div class="container flex flex-col lg:flex-row gap-3 md:gap-6 lg:gap-12 items-start relative">
       <!-- Left Sticky Content -->
       <div class="dental-left w-full lg:w-1/3 lg:sticky lg:top-16 self-start text-navy">
         <h2 class="text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%] mb-6">
@@ -737,11 +741,12 @@
       </div>
 
       <!-- Right Side Cards -->
-      <div class="dental-service-right w-full lg:w-2/3 flex flex-col gap-8">
+      <div class="dental-service-right w-full lg:w-2/3 flex flex-col gap-3 sm:gap-5 md:gap-8">
         <!-- ROW 1 -->
-        <div class="dental-service-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="dental-service-grid grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
           <!-- Card 1 -->
-          <div class="dental-service-card bg-white rounded-4xl overflow-hidden flex flex-col h-full">
+          <div
+            class="dental-service-card bg-white rounded-2xl sm:rounded-3xl md:rounded-4xl overflow-hidden flex flex-col h-full">
             <div class="dental-image relative w-full h-56">
               <img src="assets/images/dental-service01.png" class="w-full h-full object-cover"
                 alt="General Dentistry" />
@@ -766,7 +771,8 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="dental-service-card bg-white rounded-4xl overflow-hidden flex flex-col h-full">
+          <div
+            class="dental-service-card bg-white rounded-2xl sm:rounded-3xl md:rounded-4xl overflow-hidden flex flex-col h-full">
             <div class="dental-image relative w-full h-56">
               <img src="assets/images/dental-service02.png" class="w-full h-full object-cover"
                 alt="Cosmetic Dentistry" />
@@ -792,9 +798,10 @@
         </div>
 
         <!-- ROW 2 -->
-        <div class="dental-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="dental-grid grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
           <!-- Card 3 -->
-          <div class="dental-service-card bg-white rounded-4xl overflow-hidden flex flex-col h-full">
+          <div
+            class="dental-service-card bg-white rounded-2xl sm:rounded-3xl md:rounded-4xl overflow-hidden flex flex-col h-full">
             <div class="dental-image relative w-full h-56">
               <img src="assets/images/dental-service03.png" class="w-full h-full object-cover" alt="Dental Implants" />
 
@@ -818,7 +825,8 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="dental-service-card bg-white rounded-4xl overflow-hidden flex flex-col h-full">
+          <div
+            class="dental-service-card bg-white rounded-2xl sm:rounded-3xl md:rounded-4xl overflow-hidden flex flex-col h-full">
             <div class="dental-image relative w-full h-56">
               <img src="assets/images/dental-service04.png" class="w-full h-full object-cover" alt="Orthodontics" />
 
@@ -846,10 +854,10 @@
   <!-- Key services section  -->
 
   <!-- Insurance & Transparency Feature Grid Section -->
-  <section class="bg-white py-16 px-4 sm:px-6 lg:px-8 font-stacksans">
+  <section class="bg-white py-6 sm:py-10 md:py-16 lg:py-24 font-stacksans">
     <div class="container">
       <!-- Header Section -->
-      <div class="text-center mb-16 max-w-248 text-navy mx-auto">
+      <div class="text-start md:text-center mb-8 md:mb-16 max-w-248 text-navy mx-auto">
         <h2 class="text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%] mb-4">
           Insurance + cost transparency – the page most practices skip
         </h2>
@@ -861,14 +869,14 @@
       </div>
 
       <!-- Grid Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
         <!-- Card 1: Accepted insurance list -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-cyan-50 p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-cyan-50 p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-sheild-cyan.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-sheild-cyan.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -892,11 +900,11 @@
 
         <!-- Card 2: In-house membership plans -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-pink-50 p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-pink-50 p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-man-pink.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-man-pink.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -919,11 +927,11 @@
         </div>
         <!-- Card 3: Financing options page -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-cream p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-cream p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-card-cream.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-card-cream.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -946,11 +954,11 @@
         </div>
         <!-- Card 4: "What things cost" guide -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-peach-50 p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-peach-50 p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-poll-peach.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-poll-peach.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -973,11 +981,11 @@
         </div>
         <!-- Card 5: Insurance verification form -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-mint p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-mint p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-check-mint.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-check-mint.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -999,11 +1007,11 @@
         </div>
         <!-- Card 6: FAQ on insurance & billing -->
         <div
-          class="relative overflow-hidden rounded-4xl md:rounded-[48px] lg:rounded-[64px] bg-sky-50 p-6 md:p-8 lg:p-12 min-h-105 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
+          class="relative overflow-hidden rounded-2xl sm:rounded-3xl lg:rounded-[64px] bg-sky-50 p-4 sm:p-6 md:p-8 lg:p-12 min-h-95 md:min-h-112.5 lg:min-h-120 flex flex-col justify-between">
           <div class="relative z-10">
             <!-- Top Icon -->
             <div class="mb-4 md:mb-6">
-              <img src="assets/images/dental-question-sky.svg" alt="icon" class="w-12 md:w-auto" />
+              <img src="assets/images/dental-question-sky.svg" alt="icon" class="w-10 sm:w-auto" />
             </div>
 
             <!-- Card Copy -->
@@ -1028,7 +1036,7 @@
   </section>
 
   <!-- Marque section -->
-  <section class="py-12.5 overflow-hidden">
+  <section class="py-6 sm:py-10 md:py-16 overflow-hidden">
     <div class="w-[120%] -ml-[10%] md:w-full md:mx-auto -rotate-3 lg:-rotate-2">
       <div id="dental-text-ticker" class="splide bg-teal py-4 sm:py-5 rounded-full flex items-center font-stacksans">
         <div class="splide__track">
@@ -1100,10 +1108,10 @@
   </section>
 
   <!-- Process section -->
-  <section class="py-16 md:py-24 bg-white font-stacksans text-navy">
+  <section class="py-6 sm:py-10 md:py-16 lg:py-24  bg-white font-stacksans text-navy">
     <div class="container">
       <!-- Heading area -->
-      <div class="text-center max-w-248 mx-auto mb-10">
+      <div class="md:text-center max-w-248 mx-auto mb-10">
         <h2 class="text-[30px] sm:text-[48px] md:text-[56px]">
           From kickoff call to launch in 14 days
         </h2>
@@ -1114,17 +1122,17 @@
       </div>
 
       <!-- Timeline process step -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6  md:gap-8">
         <!-- Step 1 -->
         <div class="flex flex-col items-center text-center px-2">
           <div
-            class="text-[56px] font-normal leading-[110%] h-24 w-24 bg-peach text-navy flex items-center justify-center rounded-4xl">
+            class="text-[32px] sm:text-[56px] md:text-[56px] font-normal leading-[110%] h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 bg-peach text-navy flex items-center justify-center rounded-xl sm:rounded-2xl md:rounded-4xl">
             1
           </div>
-          <h3 class="text-[32px] font-normal leading-[110%] mt-8 mb-4">
+          <h3 class="text-[32px] font-normal leading-[110%] mt-4 sm:mt-5 md:mt-8 mb-4">
             Discovery
           </h3>
-          <p class="text-lg font-light leading-[150%] max-w-82">
+          <p class="text-lg font-light leading-[150%] max-w-82 text-start md:text-center">
             15-min call. Your specialties, your insurance plans, your patient
             demographics, your competition. No prep needed from you.
           </p>
@@ -1133,13 +1141,13 @@
         <!-- Step 2 -->
         <div class="flex flex-col items-center text-center px-2">
           <div
-            class="text-[56px] font-normal leading-[110%] h-24 w-24 bg-lavender text-navy flex items-center justify-center rounded-4xl">
+            class="text-[32px] sm:text-[56px] md:text-[56px] font-normal leading-[110%] h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 bg-lavender text-navy flex items-center justify-center rounded-xl sm:rounded-2xl md:rounded-4xl">
             2
           </div>
-          <h3 class="text-[32px] font-normal leading-[110%] mt-8 mb-4">
+          <h3 class="text-[32px] font-normal leading-[110%] mt-4 sm:mt-5 md:mt-8 mb-4">
             Design + branding
           </h3>
-          <p class="text-lg font-light leading-[150%] max-w-82">
+          <p class="text-lg font-light leading-[150%] max-w-82 text-start md:text-center">
             Logo, brand identity, all pages designed. You see the design
             before code is written. One round of feedback, no
             design-by-committee chaos.
@@ -1149,13 +1157,13 @@
         <!-- Step 3 -->
         <div class="flex flex-col items-center text-center px-2">
           <div
-            class="text-[56px] font-normal leading-[110%] h-24 w-24 bg-teal text-navy flex items-center justify-center rounded-4xl">
+            class="text-[32px] sm:text-[56px] md:text-[56px] font-normal leading-[110%] h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 bg-teal text-navy flex items-center justify-center rounded-xl sm:rounded-2xl md:rounded-4xl">
             3
           </div>
-          <h3 class="text-[32px] font-normal leading-[110%] mt-8 mb-4">
+          <h3 class="text-[32px] font-normal leading-[110%] mt-4 sm:mt-5 md:mt-8 mb-4">
             Build + revise
           </h3>
-          <p class="text-lg font-light leading-[150%] max-w-82">
+          <p class="text-lg font-light leading-[150%] max-w-82 text-start md:text-center">
             Site built, online booking integrated, content polished. Two
             rounds of revisions. Tested on the same phones your patients use.s
           </p>
@@ -1164,13 +1172,13 @@
         <!-- Step 4 -->
         <div class="flex flex-col items-center text-center px-2">
           <div
-            class="text-[56px] font-normal leading-[110%] h-24 w-24 bg-lemon text-navy flex items-center justify-center rounded-4xl">
+            class="text-[32px] sm:text-[56px] md:text-[56px] font-normal leading-[110%] h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 bg-lemon text-navy flex items-center justify-center rounded-xl sm:rounded-2xl md:rounded-4xl">
             4
           </div>
-          <h3 class="text-[32px] font-normal leading-[110%] mt-8 mb-4">
+          <h3 class="text-[32px] font-normal leading-[110%] mt-4 sm:mt-5 md:mt-8 mb-4">
             Launch + setup
           </h3>
-          <p class="text-lg font-light leading-[150%] max-w-82">
+          <p class="text-lg font-light leading-[150%] max-w-82 text-start md:text-center">
             Site goes live. Google Business Profile configured. Your front
             desk gets training. 30 days of support starts now.s
           </p>
@@ -1185,14 +1193,15 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-5 md:gap-8 items-stretch font-stacksans text-navy">
       <!-- Left Side Card - Image and Vibrant Background -->
       <div
-        class="lg:col-span-6 bg-teal rounded-4xl overflow-hidden flex items-end justify-center lg:min-h-full pt-12 px-6">
+        class="lg:col-span-6 bg-teal rounded-xl sm:rounded-2xl md:rounded-4xl overflow-hidden flex items-end justify-center lg:min-h-full pt-12 px-6">
         <!-- Replace with your actual asset path -->
         <img src="assets/images/dental-happy-woman.png" alt="Smiling practice woman"
           class="max-w-full h-auto object-contain" />
       </div>
 
       <!-- Right Side Card - Pricing Details Grid -->
-      <div class="lg:col-span-6 bg-lemon rounded-4xl p-8 sm:p-10 md:p-18 flex flex-col justify-between">
+      <div
+        class="lg:col-span-6 bg-lemon rounded-xl sm:rounded-2xl md:rounded-4xl p-4 sm:p-8 md:p-18 flex flex-col justify-between">
         <div>
           <h2 class="text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%] mb-4">
             Everything for your practice launch — one fixed price
@@ -1266,20 +1275,20 @@
   <!-- Bottom split Card container -->
 
   <!-- Pricing section -->
-  <section class="py-16 md:py-24 bg-white font-stacksans">
+  <section class="py-6 sm:py-10 md:py-16 lg:py-24 bg-white font-stacksans">
     <div class="container">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
         <div class="lg:col-span-4 flex flex-col items-start">
           <h2 class="text-navy text-[30px] sm:text-[48px] md:text-[56px] font-normal leading-[110%]">
             What's included and what's not
           </h2>
-          <p class="text-navy text-lg font-light leading-[130%] mt-8">
+          <p class="text-navy text-lg font-light leading-[130%] mt-4 md:mt-8">
             We'd rather be upfront about scope than surprise you later. Here's
             exactly what your $999 covers.
           </p>
 
           <!-- button -->
-          <div class="mt-8">
+          <div class="mt-5 md:mt-8">
             <a href="#"
               class="inline-flex items-center gap-2.5 bg-navy hover:bg-softnavy text-white font-medium pl-5 sm:pl-8 py-1 pr-1.5 rounded-full transition-all duration-200 group">
               <span class="text-base sm:text-lg">Book a free 15-min call</span>
@@ -1297,13 +1306,14 @@
 
         <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           <!-- card -->
-          <div class="bg-[#E4FDFF] rounded-4xl p-4 sm:p-8 flex flex-col">
-            <div
-              class="w-18 h-18 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-teal rounded-2xl md:rounded-4xl flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path d="M38 10.0138L18.9544 40L10 25.9017L13.494 23.8879L18.9524 32.4844L34.506 8L38 10.0138Z"
-                  fill="#003B5B" />
-              </svg>
+          <div class="bg-[#E4FDFF] rounded-xl sm:rounded-2xl md:rounded-4xl p-4 sm:p-8 flex flex-col">
+            <div class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24
+         bg-teal rounded-xl sm:rounded-2xl md:rounded-4xl
+         flex items-center justify-center
+         mb-4 sm:mb-6 md:mb-8">
+
+              <img src="assets/images/dental-blue-check.svg" alt="icon"
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain">
             </div>
 
             <h3 class="text-navy text-[32px] font-normal leading-[110%] mb-4 sm:mb-6 md:mb-8">
@@ -1435,14 +1445,14 @@
             </ul>
           </div>
           <!-- card -->
-          <div class="bg-[#FFF2F0] rounded-4xl p-4 sm:p-8 flex flex-col">
-            <div
-              class="w-18 h-18 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-peach rounded-2xl md:rounded-4xl flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <path
-                  d="M21.1718 24.0002L5.58594 8.41436L8.41436 5.58594L24.0002 21.1716L39.586 5.58594L42.4144 8.41436L26.8286 24.0002L42.4144 39.5858L39.586 42.4144L24.0002 26.8286L8.41436 42.4144L5.58594 39.5858L21.1718 24.0002Z"
-                  fill="#003B5B" />
-              </svg>
+          <div class="bg-[#FFF2F0] rounded-xl sm:rounded-2xl md:rounded-4xl p-4 sm:p-8 flex flex-col">
+            <div class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24
+         bg-peach rounded-xl sm:rounded-2xl md:rounded-4xl
+         flex items-center justify-center
+         mb-4 sm:mb-6 md:mb-8">
+
+              <img src="assets/images/dental-blue-cross.svg" alt="icon"
+                class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain">
             </div>
 
             <h3 class="text-navy text-[32px] font-normal leading-[110%] mb-4 sm:mb-6 md:mb-8">
@@ -1555,7 +1565,7 @@
   <!-- Pricing section -->
 
   <!-- FAQ Section -->
-  <section class="bg-offwhite text-navy py-12 sm:py-16 md:py-24 font-stacksans common-pragraph">
+  <section class="bg-offwhite text-navy py-6 sm:py-10 md:py-16 lg:py-24 font-stacksans common-pragraph">
     <div class="container">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <!-- Left -->
@@ -1574,20 +1584,11 @@
                 I'm not a tech person. How much will I have to manage?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
               </span>
             </h3>
 
@@ -1606,21 +1607,11 @@
                 Will the new site work with my existing booking software?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">
@@ -1639,21 +1630,11 @@
                 Is the site HIPAA-compliant?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">
@@ -1671,21 +1652,11 @@
                 How many new patients should I expect?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">
@@ -1704,21 +1675,11 @@
                 Can I add more services later?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">
@@ -1736,21 +1697,11 @@
                 What about my existing rankings if I rebuild?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">
@@ -1769,21 +1720,11 @@
                 Why only $999?
               </span>
               <span class="dental-faq-icon flex items-center justify-center cursor-pointer shrink-0">
-                <span class="dental-icon-plus transition-opacity duration-200">
-                  <!-- PLUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="13" y="3" width="2" height="22" fill="#004D47" />
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-
-                <span class="dental-icon-minus opacity-0 transition-opacity duration-200 absolute">
-                  <!-- MINUS SVG -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#004D47" />
-                  </svg>
-                </span>
-              </span>
+                <svg class="dental-faq-plus w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 28 28" fill="none">
+                  <rect class="vertical-line" x="13" y="3" width="2" height="22" fill="#003B5B" />
+                  <rect x="25" y="13" width="2" height="22" transform="rotate(90 25 13)" fill="#003B5B" />
+                </svg>
             </h3>
 
             <div class="dental-faq-content">

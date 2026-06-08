@@ -1835,87 +1835,75 @@ if (allIndustriesGrid) {
 
 // Dental FAQ section
 document.addEventListener("DOMContentLoaded", () => {
-
   const items = document.querySelectorAll(".dental-faq-item");
 
-  // SET INITIAL STATE
   items.forEach(item => {
-    const wrap = item.querySelector(".dental-faq-content");
-    const inner = item.querySelector(".dental-faq-content > div");
-
-    gsap.set(wrap, { height: 0, overflow: "hidden" });
-    gsap.set(inner, { opacity: 0, y: -10, filter: "blur(10px)" });
+    gsap.set(item.querySelector(".dental-faq-content"), {
+      height: 0,
+      overflow: "hidden"
+    });
   });
 
-  // CLOSE ALL ITEMS
   function closeAll() {
     items.forEach(item => {
-
       item.classList.remove("is-active");
 
-      const wrap = item.querySelector(".dental-faq-content");
-      const inner = item.querySelector(".dental-faq-content > div");
-
-      const plus = item.querySelector(".dental-icon-plus");
-      const minus = item.querySelector(".dental-icon-minus");
-
-      gsap.to(wrap, { height: 0, duration: 0.4, ease: "power2.inOut" });
-
-      gsap.to(inner, {
-        opacity: 0,
-        y: -10,
-        filter: "blur(10px)",
-        duration: 0.25
+      gsap.to(item.querySelector(".dental-faq-content"), {
+        height: 0,
+        duration: 0.4,
+        ease: "power2.inOut"
       });
 
-      plus.style.opacity = "1";
-      minus.style.opacity = "0";
+      gsap.to(item.querySelector(".dental-faq-plus"), {
+        rotate: 0,
+        duration: 0.35,
+        ease: "power2.out"
+      });
+
+      gsap.to(item.querySelector(".vertical-line"), {
+        scaleY: 1,
+        duration: 0.2
+      });
     });
   }
 
-  // MAIN CLICK
   items.forEach(item => {
-
     const trigger = item.querySelector(".dental-faq-trigger");
-    const wrap = item.querySelector(".dental-faq-content");
-    const inner = item.querySelector(".dental-faq-content > div");
-
-    const plus = item.querySelector(".dental-icon-plus");
-    const minus = item.querySelector(".dental-icon-minus");
+    const content = item.querySelector(".dental-faq-content");
+    const icon = item.querySelector(".dental-faq-plus");
+    const verticalLine = item.querySelector(".vertical-line");
 
     trigger.addEventListener("click", () => {
-
       const isOpen = item.classList.contains("is-active");
 
       closeAll();
 
       if (!isOpen) {
-
         item.classList.add("is-active");
 
-        gsap.to(wrap, {
+        gsap.to(content, {
           height: "auto",
-          duration: 0.5,
+          duration: 0.4,
           ease: "power2.inOut"
         });
 
-        gsap.to(inner, {
-          opacity: 1,
-          y: 0,
-          filter: "blur(0px)",
-          duration: 0.4
+        // Rotate icon
+        gsap.to(icon, {
+          rotate: 180,
+          duration: 0.35,
+          ease: "power2.out"
         });
 
-        plus.style.opacity = "0";
-        minus.style.opacity = "1";
+        // Hide vertical line => minus
+        gsap.to(verticalLine, {
+          scaleY: 0,
+          duration: 0.2,
+          transformOrigin: "center center"
+        });
       }
-
     });
-
   });
-
 });
-
 
 
 
