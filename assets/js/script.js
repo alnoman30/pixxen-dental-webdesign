@@ -1945,3 +1945,34 @@ document.addEventListener('DOMContentLoaded', function () {
     initTextTicker('#dental-text-ticker');
 
 });
+
+
+// 
+function initSmoothScrollArrow(selector, scrollAmount = 800) {
+    const arrows = document.querySelectorAll(selector);
+
+    if (!arrows.length) return;
+
+    // Pulse animation
+    gsap.to(selector, {
+        opacity: 0.8,
+        y: 8,
+        duration: 1.2,
+        ease: "power1.inOut",
+        repeat: -1,
+        yoyo: true
+    });
+
+    arrows.forEach((arrow) => {
+        arrow.addEventListener("click", () => {
+            lenis.scrollTo(window.scrollY + scrollAmount, {
+                duration: 1.2,
+                easing: (t) => 1 - Math.pow(1 - t, 3)
+            });
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    initSmoothScrollArrow(".dental-banner-down-arrow");
+});
